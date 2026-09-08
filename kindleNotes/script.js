@@ -3,7 +3,6 @@ window.onload = function()
 
     var notesContainer = document.querySelector("#notes-container");
     var newNoteButton = document.querySelector("#new-note-button");
-    var deleteButtons = document.querySelectorAll(".delete-button");
 
     // load previous notes
     function showNotes(){
