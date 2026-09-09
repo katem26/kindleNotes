@@ -5,15 +5,16 @@ body
     font-family: Arial, sans-serif;
 }
 
-h1
+#container
 {
-    font-size: 250%;
+    width: 98%;
+    margin: auto;
 }
 
 #notes-container
 {
-    width: 80%;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 50%; /* extra padding so notes aren't covered by the keyboard */
 }
 
 .note
@@ -22,8 +23,8 @@ h1
     color: black;
     border: solid 1px gray;
     border-radius: 5px;
-    padding: 3px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 #new-note-button
@@ -33,6 +34,8 @@ h1
     border: none;
     border-radius: 3px;
     padding: 8px;
+    margin-top: 15px;
+    font-size: 130%;
 }
 
 .delete-button

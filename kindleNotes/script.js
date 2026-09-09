@@ -1,8 +1,26 @@
 window.onload = function()
 {
-
     var notesContainer = document.querySelector("#notes-container");
     var newNoteButton = document.querySelector("#new-note-button");
+
+    // set header
+    function setHeader()
+    {
+        kindle.messaging.sendMessage("com.lab126.chromebar", "configureChrome",
+            {
+                "appId": "com.katem26.kindlenotes",
+                "topNavBar":
+                    {
+                        "template": "title",
+                        "title": "Kindle Notes"
+                    }
+            }
+        );
+    }
+
+    window.kindle.appmgr.ongo = function (ctx) {
+        setHeader();
+    }
 
     // load previous notes
     function showNotes(){
