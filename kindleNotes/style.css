@@ -17,6 +17,18 @@ body
     margin-bottom: 50%; /* extra padding so notes aren't covered by the keyboard */
 }
 
+#top-buttons button
+{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 130%;
+}
+
 .note
 {
     background-color: white;
@@ -27,22 +39,19 @@ body
     margin-bottom: 15px;
 }
 
-#new-note-button
-{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 3px;
-    padding: 8px;
-    margin-top: 15px;
-    font-size: 130%;
-}
-
-.delete-button
+.note button
 {
     background-color: black;
     color: white;
     border: none;
     border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 5px;
     padding: 5px;
+}
+
+.input-box
+{
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
