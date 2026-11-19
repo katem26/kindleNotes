@@ -9,6 +9,7 @@
     <!-- Permissions & settings standard from Kindle Store. -->
     <kindle:permissions>
         <kindle:permission name="local-port-access" />
+        <kindle:permission name="download-allowed" />
     </kindle:permissions>
     <kindle:network>
         <kindle:asset key="user-agent" value="kindle://device-type" />
